@@ -28,8 +28,6 @@ label start:
     # Introduce companions
     call introduce_companions
 
-    narrator "\nToday's journey brings you all to Pohjola's market..."
-
     # Show status
     #call screen show_status
 
@@ -67,12 +65,6 @@ label introduce_companions:
 label belt_scenario:
     scene bg market with fade
 
-    # Display the shimmering belt
-    show belt_display at Position(xalign=0.5, yalign=0.3)
-    centered "{size=+15}THE SHIMMERING BELT OF SAMPO'S LIGHT{/size}"
-    hide belt_display
-
-    narrator "Your group arrives at Pohjola's market village."
     narrator "The sun is high. A crowd has gathered."
 
     # Show companions reacting (all 3 at once, use smaller transforms)

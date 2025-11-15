@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 529, in script
-    narrator "You gained [financial_wisdom] point(s) of Financial Wisdom for Uusimaa."
+  File "game/script.rpy", line 68, in script
+    narrator "The sun is high. A crowd has gathered."
 AttributeError: 'Layout' object has no attribute 'yesno_prompt'
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 529, in script
-    narrator "You gained [financial_wisdom] point(s) of Financial Wisdom for Uusimaa."
+  File "game/script.rpy", line 68, in script
+    narrator "The sun is high. A crowd has gathered."
   File "renpy/ast.py", line 2915, in execute
     Say.execute(self)
     ~~~~~~~~~~~^^^^^^
@@ -67,4 +67,4 @@ AttributeError: 'Layout' object has no attribute 'yesno_prompt'
 Linux-6.8.0-87-generic-x86_64-with-glibc2.39 x86_64
 Ren'Py 8.4.1.25072401
  
-Sat Nov 15 23:33:54 2025
+Sat Nov 15 23:41:49 2025
