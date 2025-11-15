@@ -16,7 +16,7 @@ image iron_charm = "images/ui/iron_charm.png"
 # The game starts here
 label start:
     scene bg title with fade
-    centered "{size=+20}{color=#ff1493}THE TALES OF KALEVALA{/color}{/size}\n\n{color=#96d9ff}Financial Wisdom{/color}\n\n{size=-5}A Journey Through Ancient Lessons{/size}"
+    centered "{b}{size=+20}{color=#ff1493}THE TALES OF KALEVALA{/color}{/size}\n\n{color=#96d9ff}Financial Wisdom{/color}\n\n{size=-5}A Journey Through Ancient Lessons{/size}{/b}"
     pause 2.0
 
     # Introduction
