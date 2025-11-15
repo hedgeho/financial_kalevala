@@ -40,22 +40,15 @@ label start:
 # ===== COMPANION INTRODUCTION =====
 label introduce_companions:
     scene bg market with fade
-    centered "{size=+10}✨ YOUR TRAVELING COMPANIONS ✨{/size}"
 
     # Aino introduction
     show aino neutral at character_left with dissolve
-    show aino_ascii at Position(xalign=0.5, yalign=0.3)
-    centered "{color=#5dadec}{size=+5}💙 Aino the Careful{/size}{/color}\n{size=-2}Soft blue shawl, silver birch-leaf brooch{/size}"
-    hide aino_ascii
 
     aino "Silver saved today is warmth earned tomorrow. 🍃"
 
     # Ilmarinen introduction
     hide aino with dissolve
     show ilmarinen neutral at character_center with dissolve
-    show ilmarinen_ascii at Position(xalign=0.5, yalign=0.3)
-    centered "{color=#f5a442}{size=+5}🔨 Ilmarinen the Forgemind{/size}{/color}\n{size=-2}Dark forge apron with glowing runes{/size}"
-    hide ilmarinen_ascii
 
     ilmarinen "Even gold must be tested before trusted. ⚒️"
     show ilmarinen thoughtful
@@ -64,9 +57,6 @@ label introduce_companions:
     # Lemminkäinen introduction
     hide ilmarinen with dissolve
     show lemminkainen neutral at character_right with dissolve
-    show lemminkainen_ascii at Position(xalign=0.5, yalign=0.3)
-    centered "{color=#ff6b6b}{size=+5}🔥 Lemminkäinen the Bold{/size}{/color}\n{size=-2}Fiery red cloak, belt full of trinkets{/size}"
-    hide lemminkainen_ascii
 
     lemminkainen "Luck won't wait—so why should we? ⚡"
     show lemminkainen grinning
@@ -531,35 +521,29 @@ label reflection_impulse:
 
     # Lemminkäinen reflects
     show lemminkainen embarrassed at character_center with dissolve
-    show lemminkainen_ascii at Position(xalign=0.5, yalign=0.2)
     lemminkainen "*sheepishly* I almost bought one too."
 
     lemminkainen "The thrill! The excitement! 🎭"
     lemminkainen "But now I see - that rush was the trap itself."
     hide lemminkainen
-    hide lemminkainen_ascii
     with dissolve
 
     # Aino reflects
     show aino sad at character_center with dissolve
-    show aino_ascii at Position(xalign=0.5, yalign=0.2)
     aino "*gently* That silver was for winter supplies. 🌨️"
 
     aino "One moment of excitement = weeks of lost security."
     aino "Ask yourself: Need this? Or just want it NOW?"
     hide aino
-    hide aino_ascii
     with dissolve
 
     # Ilmarinen reflects
     show ilmarinen thoughtful at character_center with dissolve
-    show ilmarinen_ascii at Position(xalign=0.5, yalign=0.2)
     ilmarinen "The merchant used urgency. Scarcity. Social proof. 🎪"
 
     ilmarinen "Tools to bypass your rational mind."
     ilmarinen "Remember: When someone rushes you, walk slower. ⚖️"
     hide ilmarinen
-    hide ilmarinen_ascii
     with dissolve
 
     # Wisdom points
@@ -597,35 +581,29 @@ label reflection_investigate:
 
     # Ilmarinen reflects
     show ilmarinen approving at character_center with dissolve
-    show ilmarinen_ascii at Position(xalign=0.5, yalign=0.2)
     ilmarinen "*nods* You asked: 'Is this real?' 🔍"
 
     ilmarinen "That skepticism saved you 120 silver."
     ilmarinen "But it taught you something worth even more. 💎"
     hide ilmarinen
-    hide ilmarinen_ascii
     with dissolve
 
     # Aino reflects
     show aino happy at character_center with dissolve
-    show aino_ascii at Position(xalign=0.5, yalign=0.2)
     aino "You took time to verify. ⏳"
 
     aino "You didn't let their urgency become YOUR emergency."
     aino "That's the wisdom of patience. 🌿"
     hide aino
-    hide aino_ascii
     with dissolve
 
     # Lemminkäinen reflects
     show lemminkainen neutral at character_center with dissolve
-    show lemminkainen_ascii at Position(xalign=0.5, yalign=0.2)
     lemminkainen "I was drawn to it too! That shine! ✨"
 
     lemminkainen "But watching you stay calm while others panicked..."
     lemminkainen "That takes real courage. The bold choice isn't always loud. 🛡️"
     hide lemminkainen
-    hide lemminkainen_ascii
     with dissolve
 
     # Wisdom points
@@ -663,36 +641,30 @@ label reflection_resist:
 
     # Aino reflects
     show aino proud at character_center with dissolve
-    show aino_ascii at Position(xalign=0.5, yalign=0.2)
     aino "*proud* You walked away. 🚶"
 
     aino "You kept your silver. Your plan. Your peace."
     aino "The hardest choices bring the greatest strength. 💪"
     hide aino
-    hide aino_ascii
     with dissolve
 
     # Ilmarinen reflects
     show ilmarinen approving at character_center with dissolve
-    show ilmarinen_ascii at Position(xalign=0.5, yalign=0.2)
     ilmarinen "And what happened? 🎭"
 
     ilmarinen "The 'limited' belts? Abundant."
     ilmarinen "The urgency? Theater. You saw through it by stepping back. 👁️"
     hide ilmarinen
-    hide ilmarinen_ascii
     with dissolve
 
     # Lemminkäinen reflects
     show lemminkainen neutral at character_center with dissolve
-    show lemminkainen_ascii at Position(xalign=0.5, yalign=0.2)
     lemminkainen "*laughs* The crowd mocked you!"
 
     lemminkainen "But you didn't flinch. 🗡️"
     lemminkainen "I've charged into battle with less courage than your 'not today.'"
     lemminkainen "That's the boldness of wisdom. ⚔️"
     hide lemminkainen
-    hide lemminkainen_ascii
     with dissolve
 
     # Wisdom points
