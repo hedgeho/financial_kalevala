@@ -1,0 +1,108 @@
+.leaderboard {
+  background: rgba(16, 20, 28, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(136, 192, 208, 0.15);
+}
+
+.leaderboard-title {
+  color: #88c0d0;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+
+.leaderboard-subtitle {
+  color: #81a1c1;
+  font-size: 12px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: rgba(46, 52, 64, 0.4);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(76, 86, 106, 0.3);
+}
+
+.leaderboard-item:hover {
+  background: rgba(59, 66, 82, 0.6);
+  border-color: rgba(136, 192, 208, 0.4);
+  transform: translateX(2px);
+}
+
+.leaderboard-item.home-region {
+  background: rgba(136, 192, 208, 0.15);
+  border-color: rgba(136, 192, 208, 0.5);
+}
+
+.leaderboard-item.home-region:hover {
+  background: rgba(136, 192, 208, 0.25);
+  border-color: rgba(136, 192, 208, 0.7);
+}
+
+.rank {
+  font-size: 16px;
+  font-weight: 700;
+  color: #81a1c1;
+  min-width: 32px;
+  text-align: center;
+}
+
+.leaderboard-item.home-region .rank {
+  color: #88c0d0;
+}
+
+.region-info {
+  flex: 1;
+}
+
+.region-name {
+  color: #e5e9f0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  letter-spacing: -0.1px;
+}
+
+.region-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.points {
+  color: #88c0d0;
+  font-weight: 500;
+}
+
+.achievements {
+  color: #81a1c1;
+}
+
+.home-badge {
+  background: rgba(136, 192, 208, 0.2);
+  color: #88c0d0;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(136, 192, 208, 0.3);
+}
