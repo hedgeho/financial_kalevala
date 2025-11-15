@@ -7,6 +7,7 @@ image bg market_stall = "images/backgrounds/merchant_stall.png"
 image bg market_distant = "images/backgrounds/market_village.png"
 image bg morning = "images/backgrounds/morning_camp.png"
 image bg title = "images/backgrounds/morning_camp.png"
+image bg mmo = "images/backgrounds/kalevalaMMO.png"
 
 # UI Element Images
 image belt_display = "images/ui/shimmering_belt.png"
@@ -501,7 +502,6 @@ label resist_path:
     narrator "🏪 You return to the market."
     narrator "Merchants nod respectfully. 🙇"
 
-    show friendly_merchant at character_center with dissolve
     friendly_merchant "😊"
     friendly_merchant "\"Ah! The one who doesn't chase fool's gold!\""
 
@@ -724,14 +724,13 @@ label ending:
     lemminkainen "To stand still. Who knew? 🤷"
     hide lemminkainen with dissolve
 
-    centered "{size=+10}{color=#ff1493}═══════════════════════════════════════════════════════════{/color}{/size}"
-    centered "{color=#96d9ff}✨ Thank you for playing ✨{/color}"
     centered "{b}THE TALES OF KALEVALA: FINANCIAL WISDOM{/b}"
-    centered "{size=+10}{color=#ff1493}═══════════════════════════════════════════════════════════{/color}{/size}"
 
-    narrator "\n{color=#96d9ff}Three perspectives. One truth:{/color}"
-    narrator "{color=#96d9ff}Wisdom comes from listening to all voices -{/color}"
-    narrator "{color=#96d9ff}including your own. 🔱{/color}"
+    transform half_size:
+        zoom 0.7
+    scene bg mmo at half_size with fade
+
+    narrator "You gained [financial_wisdom] point(s) of Financial Wisdom for Uusimaa."
 
     return
 
