@@ -1,17 +1,17 @@
-2025-11-16 08:02:00 UTC
+2025-11-16 08:08:14 UTC
 Linux-6.8.0-87-generic-x86_64-with-glibc2.39
 Ren'Py 8.4.1.25072401
 
-Early init took 34 ms
-Loading error handling took 11 ms
-Loading script took 40 ms
-Loading save slot metadata took 4 ms
+Early init took 38 ms
+Loading error handling took 13 ms
+Loading script took 72 ms
+Loading save slot metadata took 5 ms
 Loading persistent took 0 ms
-Running init code took 24 ms
-Loading analysis data took 2 ms
+Running init code took 30 ms
+Loading analysis data took 3 ms
 Analyze and compile ATL took 1 ms
 Reloading save slot metadata took 3 ms
-Dump and make backups took 27 ms
+Dump and make backups took 28 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
 Initial gc took 28 ms
@@ -19,8 +19,65 @@ DPI scale factor: 1.000000
 Creating interface object took 0 ms
 Init translation took 0 ms
 Cleaning stores took 0 ms
-Load screen analysis took 12 ms
+Load screen analysis took 11 ms
 Analyze screens took 0 ms
 Save screen analysis took 0 ms
 Save pyanalysis took 0 ms
 Save bytecode took 0 ms
+Running _start took 1 ms
+Interface start took 195 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Mesa Intel(R) Iris(R) Xe Graphics (TGL GT2)'
+Version: '4.6 (Compatibility Profile) Mesa 25.0.7-0ubuntu0.24.04.2'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(800, 600)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(800, 600) physical=(1920, 1048) drawable=(1920, 1048)
+Maximum texture size: 4096x4096
+Cleaning stores took 0 ms
+Load screen analysis took 17 ms
+Analyze screens took 0 ms
+Running _start took 1 ms
+
+Full traceback:
+  File "game/script.rpy", line 142, in script
+    menu:
+  File "renpy/ast.py", line 1815, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "renpy/exports/menuexports.py", line 135, in menu
+    rv = renpy.store.menu(new_items)
+  File "renpy/exports/menuexports.py", line 418, in display_menu
+    rv = renpy.ui.interact(mouse="menu", type=type, roll_forward=roll_forward)
+  File "renpy/ui.py", line 304, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 2219, in interact
+    repeat, rv = self.interact_core(
+        preloads=preloads,
+    ...<4 lines>...
+        **kwargs,
+    )  # type: ignore
+  File "renpy/display/core.py", line 3137, in interact_core
+    self.quit_event()
+  File "renpy/display/core.py", line 1813, in quit_event
+    renpy.display.behavior.run(renpy.config.quit_action)
+  File "renpy/display/behavior.py", line 411, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_menu.rpy", line 271, in __call__
+    layout.yesno_screen(layout.QUIT, Quit(False))
+  File "renpy/common/00layout.rpy", line 517, in yesno_screen
+    elif renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
+  File "renpy/game.py", line 301, in invoke_in_new_context
+    return callable(*args, **kwargs)
+  File "renpy/common/00layout.rpy", line 472, in invoke_yesno_prompt
+    rv = layout.yesno_prompt(*args)
+AttributeError: 'Layout' object has no attribute 'yesno_prompt'
+
+While running game code:
+  File "game/script.rpy", line 142, in script
+    menu:
+AttributeError: 'Layout' object has no attribute 'yesno_prompt'
